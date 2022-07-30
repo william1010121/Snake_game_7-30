@@ -1,7 +1,7 @@
 var init_varible = {
     background_color: "white", 
     block_size: 20,
-    Snake_speed: 10, // grid/s
+    Snake_speed: 15, // grid/s
     Snake_body_color: "black",
     Snake_head_color: "blue",
     Apple_color: "pink",
