@@ -255,15 +255,23 @@ function Add_key_listener() {
     var Dkey = document.getElementById("Dkey");
 
     Wkey.addEventListener('click', ()=> {
-        if( Snake.speedy != 1 )  Snake.speedx = 0, Snake.speedy = -1;
+        setTimeout( ()=>{
+            if( Snake.speedy != 1 )  Snake.speedx = 0, Snake.speedy = -1;
+        });
     });
     Akey.addEventListener('click', ()=> {
-        if( Snake.speedx != 1 )  Snake.speedx = -1, Snake.speedy = 0;
+        setTimeout( ()=>{
+            if( Snake.speedx != 1 )  Snake.speedx = -1, Snake.speedy = 0;
+        })
     });
     Skey.addEventListener('click', ()=> {
-        if( Snake.speedy != -1 )  Snake.speedx = 0, Snake.speedy = 1;
+        setTimeout( ()=>{
+            if( Snake.speedy != -1 )  Snake.speedx = 0, Snake.speedy = 1;
+        })
     });
     Dkey.addEventListener('click', ()=> {
-        if( Snake.speedx != -1 )  Snake.speedx = 1, Snake.speedy = 0;
+        setTimeout( ()=>{
+            if( Snake.speedx != -1 )  Snake.speedx = 1, Snake.speedy = 0;
+        })
     });
 }
