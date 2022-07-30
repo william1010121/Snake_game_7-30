@@ -257,21 +257,21 @@ function Add_key_listener() {
     Wkey.addEventListener('click', ()=> {
         setTimeout( ()=>{
             if( Snake.speedy != 1 )  Snake.speedx = 0, Snake.speedy = -1;
-        });
+        }, 1);
     });
     Akey.addEventListener('click', ()=> {
         setTimeout( ()=>{
             if( Snake.speedx != 1 )  Snake.speedx = -1, Snake.speedy = 0;
-        })
+        }, 1)
     });
     Skey.addEventListener('click', ()=> {
         setTimeout( ()=>{
             if( Snake.speedy != -1 )  Snake.speedx = 0, Snake.speedy = 1;
-        })
+        }, 1)
     });
     Dkey.addEventListener('click', ()=> {
         setTimeout( ()=>{
             if( Snake.speedx != -1 )  Snake.speedx = 1, Snake.speedy = 0;
-        })
+        }, 1)
     });
 }
