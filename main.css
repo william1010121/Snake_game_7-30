@@ -5,3 +5,17 @@ canvas {
     border: 1px solid black;
     margin: auto;
 }
+
+button {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left:10px;
+    width: 50px;
+    height: 50px;
+}
+
+#Wkey{
+    position: relative;
+    left: 65px;
+}
+

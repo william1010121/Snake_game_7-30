@@ -145,6 +145,8 @@ window.onload = function(){
     Apple = new _apple(init_varible['block_size']);
 
     Game_loop();
+
+    Add_key_listener();
 }
 
 
@@ -245,3 +247,23 @@ window.addEventListener('keydown', (event)=> {
 
      }, 1);
 });
+
+function Add_key_listener() {
+    var Wkey = document.getElementById("Wkey");
+    var Akey = document.getElementById("Akey");
+    var Skey = document.getElementById("Skey");
+    var Dkey = document.getElementById("Dkey");
+
+    Wkey.addEventListener('click', ()=> {
+        if( Snake.speedy != 1 )  Snake.speedx = 0, Snake.speedy = -1;
+    });
+    Akey.addEventListener('click', ()=> {
+        if( Snake.speedx != 1 )  Snake.speedx = -1, Snake.speedy = 0;
+    });
+    Skey.addEventListener('click', ()=> {
+        if( Snake.speedy != -1 )  Snake.speedx = 0, Snake.speedy = 1;
+    });
+    Dkey.addEventListener('click', ()=> {
+        if( Snake.speedx != -1 )  Snake.speedx = 1, Snake.speedy = 0;
+    });
+}
